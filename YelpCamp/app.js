@@ -19,7 +19,8 @@ let User = require("./models/user");
 let commentsRoutes = require("./routes/comments");
 let campgroundsRoutes = require("./routes/campgrounds");
 let authRoutes = require("./routes/auth");
-
+let methodOverride = require("method-override");
+app.use(methodOverride("_method"));
 
 
 app.use(require("express-session")({

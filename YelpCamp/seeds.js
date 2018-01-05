@@ -17,7 +17,7 @@ let data = [{
 }, ];
 
 function seedDB() {
-    Campground.remove({}, function(error) {});
+    // Campground.remove({}, function(error) {});
 }
         // if (error) {
         //     console.log(error);
