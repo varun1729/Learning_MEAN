@@ -4,6 +4,8 @@ let bodyParser = require("body-parser");
 let mongoose = require("mongoose");
 let methodOverride = require("method-override");
 let sanitizer = require("express-sanitizer");
+let User = require("./models/user");
+
 
 mongoose.connect("mongodb://localhost/blog");
 app.set("view engine", "ejs");
@@ -22,6 +24,7 @@ let blogSchema = new mongoose.Schema({
     }
 });
 let Blog = mongoose.model("Blog", blogSchema);
+
 
 Blog.create({
 	title: "First Blog Post!",
