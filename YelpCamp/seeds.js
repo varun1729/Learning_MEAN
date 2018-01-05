@@ -17,46 +17,47 @@ let data = [{
 }, ];
 
 function seedDB() {
-    Campground.remove({}, function(error) {
-        if (error) {
-            console.log(error);
-        } else {
-            Comment.remove({}, function(error) {
-                if (error) {
-                    console.log(error)
-                } else {
-                    console.log("ALL DATA REMOVED");
-                    data.forEach(function(seed) {
-                        Campground.create(seed, function(error, addedCampground) {
-                            if (error) {
-                                console.log(error);
-                            } else {
-                                console.log("added a Campground");
-                                Comment.create({
-                                    text: "Great spot, beautiful weather and wondeful wildlife!",
-                                    author: "Heisenberg",
-                                }, function(error, comment) {
-                                    if (error) {
-                                        console.log(error);
-                                    } else {
-                                        addedCampground.comments.push(comment._id);
-                                        addedCampground.save(function (error){
-                                            if(error){
-                                                console.log(error)
-                                            } else {
-                                                console.log("Created a comment");
-                                            }
-                                        });
-                                    }
-                                });
-                            }
-                        });
-                    });
-                }
-
-            });
-
-        }
-    });
+    Campground.remove({}, function(error) {});
 }
+        // if (error) {
+        //     console.log(error);
+        // } else {
+        //     Comment.remove({}, function(error) {
+        //         if (error) {
+        //             console.log(error)
+        //         } else {
+        //             console.log("ALL DATA REMOVED");
+//                     data.forEach(function(seed) {
+//                         Campground.create(seed, function(error, addedCampground) {
+//                             if (error) {
+//                                 console.log(error);
+//                             } else {
+//                                 console.log("added a Campground");
+//                                 Comment.create({
+//                                     text: "Great spot, beautiful weather and wondeful wildlife!",
+//                                     author: "Heisenberg",
+//                                 }, function(error, comment) {
+//                                     if (error) {
+//                                         console.log(error);
+//                                     } else {
+//                                         addedCampground.comments.push(comment._id);
+//                                         addedCampground.save(function (error){
+//                                             if(error){
+//                                                 console.log(error)
+//                                             } else {
+//                                                 console.log("Created a comment");
+//                                             }
+//                                         });
+//                                     }
+//                                 });
+//                             }
+//                         });
+//                     });
+//                 }
+
+//             });
+
+//         }
+//     });
+// }
 module.exports = seedDB;
