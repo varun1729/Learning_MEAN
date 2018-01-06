@@ -7,7 +7,6 @@ console.log("CampGround");
 router.get("/new", isLoggedIn, function(req, res) {
     res.render("campgrounds/new");
 });
-
 router.post("/", isLoggedIn, function(req, res) {
     let nameCampGround = req.body.name;
     let urlImage = req.body.image;
