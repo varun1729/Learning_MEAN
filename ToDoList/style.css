@@ -1,0 +1,197 @@
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+
+    background: linear-gradient(to right, #ffd89b, #19547b);
+}
+p
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+
+    margin: .2%;
+    padding: 0;
+    padding-left: 1%;
+
+    color: #24213a;
+}
+i{
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+
+}
+.fa-times
+{
+      padding-top: 6px;
+  padding-bottom: 5px;
+    margin: 0;
+    display:  flex;
+    font-size: 35px;
+      /* This centers our sketch horizontally. */
+    justify-content: center;
+
+  /* This centers our sketch vertically. */
+    align-items: center;
+    float: right;
+}
+hr
+{
+    height: 1px;
+    margin-top: 43.5%;
+
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+}
+.w3-modal-content
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.0em;
+}
+
+.fa-pencil
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: right;
+}
+
+.w3-teal,
+.w3-hover-teal:hover
+{
+    color: #fff!important;
+    background-color: #3472d2!important;
+}
+#container
+{
+    width: 33%;
+    margin: 10% auto;
+}
+h2
+{
+    line-height: 35px;
+
+    height: 35px;
+
+    letter-spacing: 2px;
+}
+.w3-container
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: .7em;
+}
+.fa-cog
+{
+    font-size: 35px;
+
+    margin: 2%;
+
+    color: #edf2f9;
+}
+.imgSelected{
+    box-shadow: 3px 4px 7px -1px rgba(6,35,46,1);
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.strike
+{
+    text-decoration: line-through;
+
+    color: gray;
+}
+
+li:nth-of-type(even)
+{
+    background-color: #f2f2f2;
+}
+
+li:nth-of-type(odd)
+{
+    background-color: #f9f9f9;
+}
+img
+{
+    float: left;
+
+    width: 30%;
+    margin: 1.5%;
+    margin-top: 0;
+}
+h1
+{
+    font-size: 2.0em;
+    font-weight: normal;
+
+    margin: 0;
+    padding: 3%;
+
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: white;
+    background-color: #3472d2;
+}
+
+input
+{
+    font-size: 1.35em;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 43px;
+    margin: 0;
+    padding-left: 20px;
+
+    color: #24213a;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+input:focus
+{
+    background: #fff;
+}
+
+li
+{
+    font-size: 1.2em;
+    line-height: 39px;
+
+    box-sizing: border-box;
+    height: 39px;
+    margin: 0;
+
+    color: #24213a;
+}
+
+.delete
+{
+    display: none;
+
+    width: 40px;
+    height: 39px;
+    margin-left: 0;
+    padding: 0;
+
+    text-align: center;
+
+    opacity: 1;
+    color: white;
+    background-color: #ed4747;
+}
+
+.task
+{
+    padding-left: 3%;
+}
